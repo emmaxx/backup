@@ -1,0 +1,25 @@
+{
+  "presets": ["react", "es2015", "stage-1"],
+  "env": {
+    "dev-server": {
+      "plugins": [
+        [
+          "css-modules-transform", {
+            "preprocessCss": "./helpers/sass-loader.js",
+            "extensions": [".scss"]
+          }
+        ]
+      ]
+    },
+    "prod-server": {
+      "plugins": [
+        [
+          "css-modules-transform", {
+            "preprocessCss": "./helpers/sass-loader.js",
+            "extensions": [".scss"]
+          }
+        ]
+      ]
+    }
+  }
+}
